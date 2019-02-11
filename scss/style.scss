@@ -1,0 +1,255 @@
+$header-color: #E6E7E9;
+$footer-color: $header-color;
+$menu-color-green: #A6CF39;
+$nav-item-start-color: #808080;
+$facebook-color: #3b5998;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+//HEADINGS
+
+.heading-product {
+  color: $menu-color-green;
+}
+
+//HEADER
+
+.header {
+  background: $header-color;
+  min-height: 6rem;
+  display: flex;
+  align-items: center;
+
+  .logo {
+    width: 15rem;
+    height: auto;
+  }
+
+  .info-box {
+    border-right: 1px solid #B4B6BA;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+}
+
+//NAVIGATION BAR
+
+.menu-link {
+  font-size: 1rem;
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.5s;
+}
+
+.menu-link:link, .menu-link:visited {
+  color: #ffffff;
+}
+
+.menu-link:link, .menu-link:active {
+  color: #ffffff;
+}
+
+.menu-link:hover {
+  background-color: $nav-item-start-color;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container-menu {
+  background-color: $menu-color-green;
+  min-height: 4rem;
+  position: relative;
+  z-index: 1;
+
+  .container-navbar {
+    background-color: $menu-color-green;
+  }
+
+  .navbar, .navbar-nav, .search-bar, .start-link {
+    min-height: 4rem;
+
+  }
+
+  .start-link {
+    background: $nav-item-start-color;
+  }
+
+  .search-bar {
+    background-color: $nav-item-start-color;
+
+    .search {
+      background-color: $nav-item-start-color;
+      border: 0;
+    }
+
+    .search::placeholder {
+      color: white;
+      font-style: italic;
+      font-size: 0.7rem;
+      font-weight: 300;
+    }
+
+    .button {
+      background-color: $nav-item-start-color;
+      border: 0;
+      padding: 0 1rem;
+      cursor: pointer;
+    }
+
+    .search:focus, .button:focus {
+      outline: none;
+    }
+
+    .fa-search {
+      color: white;
+    }
+  }
+
+  .right-menu {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .menu-right-margin-filler {
+    height: 4rem;
+    background-color: $nav-item-start-color;
+  }
+
+}
+
+/*STICKY NAVIGATION BAR*/
+
+.sticky.start-link {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background: rgba(128,128,128,0.8);
+}
+
+//SLIDER
+
+.slider {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container-slogan {
+  position: absolute;
+  bottom: 0.5rem;
+}
+
+.col-slogan {
+  background-color: $menu-color-green;
+  height: 10rem;
+}
+
+.slogan-text {
+  line-height: 2rem;
+}
+
+.container-slider:after {
+  display: block;
+  height: 0.5rem;
+  width: 150%;
+  background-color: $nav-item-start-color;
+  content: "";
+}
+
+.slogan-right-side {
+  position: absolute;
+  right: 0;
+  bottom: 0.5rem;
+  z-index: -1;
+}
+
+.slogan-right-margin-filler {
+  height: 10rem;
+  background-color: $menu-color-green;
+}
+
+
+.headline-1 {
+  background-color: $nav-item-start-color;
+  height: 6rem;
+}
+
+.headline-2 {
+  background-color: $menu-color-green;
+  height: 6rem;
+}
+
+.facebook-link {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.5s;
+}
+
+.facebook-link:link, .facebook-link:visited {
+  color: #ffffff;
+}
+
+.facebook-link:link, .facebook-link:active {
+  color: #ffffff;
+}
+
+.facebook-link:hover {
+  text-decoration: none;
+  color: $facebook-color;
+}
+
+//SECTION PRODUCTS
+
+.products {
+  position: relative;
+}
+
+.product-left-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.products-left-margin-filler {
+  height: 6rem;
+  background-color: $nav-item-start-color;
+}
+
+
+//FOOTER
+.footer {
+  background-color: $footer-color;
+
+  .footer-text {
+    font-size: 0.6rem;
+    font-weight: 700;
+  }
+
+  .private-politics-link, .private-politics-link:visited {
+    color: #000000;
+  }
+
+  .private-politics-link:link, .private-politics-link:active {
+    color: #000000;
+  }
+
+  .private-politics-link:hover {
+    text-decoration: none;
+  }
+
+}
+
+
